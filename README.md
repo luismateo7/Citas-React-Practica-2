@@ -5,13 +5,13 @@ Este proyecto es una práctica que hice del curso de React con Juan Pablo de la 
 
 El proyecto es un **CRUD** con **LocalStorage** que permite hacer las funciones básicas de un CRUD para pacientes de veterinarias (mascotas), donde pedimos el nombre de la mascota, el nombre de su propietario, su email, la fecha de ingreso de la mascota y los síntomas.
 
-###Tecnologías Usada
+### Tecnologías Usada
 - **CSS:** TailwindCSS
 - **JS:** React
 - **CDN:** [Swett Alert](https://sweetalert2.github.io/ "Swett Alert")
 - **Edición:** Adobe Illustrator (logo)
 
-###Perfomance
+### Perfomance
 El perfomance hecho con Lighthouse es:
 - **Perfomance:** 100%
 - **Accesibility:** 100%
