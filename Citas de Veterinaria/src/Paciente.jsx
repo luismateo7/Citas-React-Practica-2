@@ -5,9 +5,25 @@ const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
     const {nombre, propietario, email, fecha, sintomas, id} = paciente;
 
     const handleEliminar = ()=>{
-        let respuesta = confirm("Deseas Eliminar este paciente ?")
-
-        if(respuesta) eliminarPaciente(id)
+        Swal.fire({
+            title: 'Estas seguro que deseas eliminar este paciente?',
+            text: "No podrás revertir esta acción!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: 'rgb(79 70 229 / 1)',
+            cancelButtonColor: 'rgb(220 38 38 / 1)',
+            confirmButtonText: 'Si, eliminarlo!',
+            cancelButtonText: 'Cancelar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+                eliminarPaciente(id)
+                Swal.fire({
+                    title: 'Paciente Eliminado',
+                    text: 'Has eliminado exitosamente al paciente',
+                    icon: 'success'
+                })
+            }
+        })
     }
 
   return (

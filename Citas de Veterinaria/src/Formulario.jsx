@@ -76,7 +76,7 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
                 <span className='text-indigo-600 font-bold'>Administralos</span>
             </p>
 
-            <form className="mt-10 bg-white-100 ml-5 px-5 bg-white rounded-md py-10" onSubmit={handleSubmit}>
+            <form className="mt-10 bg-white-100 mx-5 px-5 bg-white rounded-md py-10" onSubmit={handleSubmit}>
 
                 { mensajeError && (
                     <div className="bg-red-800 text-white text-center p-3 uppercase font-bold mb-3 rounded-md">
